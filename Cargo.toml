@@ -1,0 +1,19 @@
+[package]
+name = "poc_rust_rocket"
+version = "1.0.0"
+edition = "2018"
+authors = ["Richard Gomes"]
+
+[dependencies]
+log = "~0.4"
+env_logger = "~0.6"
+serde = { version = "~1.0", features=["derive"] }
+serde_derive = "~1.0"
+serde_json = "~1.0"
+rocket = { git = "http://github.com/SergioBenitez/Rocket", branch = "async" }
+rocket_contrib = { git = "http://github.com/SergioBenitez/Rocket", branch = "async", default-features = false, features = ["json"] }
+
+#futures = "~0.3"
+#mime = "~0.3"
+
+[dev-dependencies]
